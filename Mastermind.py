@@ -42,7 +42,7 @@ print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
 
 longueur = 2
-nb_tentative = 4
+nb_test = 4
 couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
 col = []
 for i in couleurs :
