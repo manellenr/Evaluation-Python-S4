@@ -3,17 +3,6 @@
 Created on Tue Mar 17 18:36:00 2020
 @author: nouar manelle
 """
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 17 18:36:00 2020
-@author: nouar manelle
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 17 18:36:00 2020
-@author: nouar manelle
-"""
 import random
 # création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 6 couleurs
 
