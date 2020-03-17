@@ -106,3 +106,5 @@ def  mettre_pions():
         return e
 # test
 print(mettre_pions())
+
+mettre_pions()
