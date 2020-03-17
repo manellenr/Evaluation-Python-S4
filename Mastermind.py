@@ -51,14 +51,14 @@ marstermind()
 print( list(enumerate('32') ) )
 
 longueur = 2
-nb_tentative = 4 
+nb_tentative = 6
 couleurs = ['bleu','rose','vert','jaune'] # liste des choix de couleurs possibles
 col = [couleurs[i][0] for i in range(len(couleurs))]
 
 def afficher_couleurchoisi():
     for i in couleurs: # on va chercher les couleurs dans la liste
         print(i)
-afficher_couleurchoisi()
+print(afficher_couleurchoisi())
 
 def result_secret():
     code = " " # le résultat secret renvoie une chaine de charactères
@@ -67,5 +67,9 @@ def result_secret():
         co = col[position_nb] + code
     return co    
 result_secret()
+
+# test
+print(result_secret())
+
 
 
