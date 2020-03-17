@@ -3,6 +3,17 @@
 Created on Tue Mar 17 18:36:00 2020
 @author: nouar manelle
 """
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 18:36:00 2020
+@author: nouar manelle
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 18:36:00 2020
+@author: nouar manelle
+"""
 import random
 # création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 6 couleurs
 
@@ -41,7 +52,7 @@ print( list(enumerate('32') ) )
 
 longueur = 2
 nb_tentative = 4 
-couleurs = ['bleu','rose','rouge','jaune'] # liste des choix de couleurs possibles
+couleurs = ['bleu','rose','vert','jaune'] # liste des choix de couleurs possibles
 col = [couleurs[i][0] for i in range(len(couleurs))]
 
 def afficher_couleurchoisi():
@@ -56,3 +67,5 @@ def result_secret():
         co = col[position_nb] + code
     return co    
 result_secret()
+
+
