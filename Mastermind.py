@@ -53,6 +53,6 @@ def result_secret():
     code = " " # le résultat secret renvoie une chaine de charactères
     for i in range(0,longueur):
         position_nb = random.randint(0,len(col) - 1)
-        code = col[position_nb] + code
-    return code    
+        co = col[position_nb] + code
+    return co    
 result_secret()
