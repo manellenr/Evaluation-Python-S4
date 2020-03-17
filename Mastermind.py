@@ -57,7 +57,6 @@ def result_secret():
         position_nb = random.randint(0,len(col) - 1)
         co = col[position_nb] + code
     return co    
-result_secret()
 
 # test
 print(result_secret())
