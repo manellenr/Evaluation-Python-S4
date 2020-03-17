@@ -42,7 +42,7 @@ print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
 
 longueur = 2
-nb_test = 4
+nb_tentative = 4
 couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
 col = []
 for i in couleurs :
@@ -52,6 +52,8 @@ def afficher_couleurchoisi():
     for i in couleurs: # on va chercher les couleurs dans la liste
         print(i)
 print(afficher_couleurchoisi())
+
+afficher_couleurchoisi()
 
 def result_secret():
     code_secret = " " # le résultat secret renvoie une chaine de charactères
@@ -63,9 +65,11 @@ def result_secret():
 # test
 print(result_secret())
 
+result_secret()
 
 def evaluation_code(code_secret, code_entree):
-    bien_place, mal_place = 0, 0
+    bien_place = 0
+    mal_place = 0
     couleurs_secret = list(code_secret) 
     couleurs_choisi = list(code_entree)
         
@@ -83,7 +87,8 @@ def evaluation_code(code_secret, code_entree):
             couleurs_secret[gamer] = '*'
     return [bien_place, mal_place]
 
-# test   
+# test
+    
 print(evaluation_code('br','oa'))
 print(evaluation_code('br','ao'))
 print(evaluation_code('rb','oa'))
@@ -91,6 +96,8 @@ print(evaluation_code('rb','ao'))
 print(evaluation_code('ar','bo'))
 print(evaluation_code('ro','ba'))
 print(evaluation_code('or','ba'))
+
+evaluation_code()
 
 def  mettre_pions():
     e = input("mettez vos pions : ")
@@ -104,3 +111,6 @@ def  mettre_pions():
         return e
 # test
 print(mettre_pions())
+
+mettre_pions()
+
