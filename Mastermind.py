@@ -35,7 +35,10 @@ def marstermind(pions= 2, couleurs= 4):
               return 'youpi! tu as trouvé le secret'
         print(bien_place,":gagner",mal_place,":perdu")
          
-marstermind()        
+marstermind()       
+
+# test
+print( list(enumerate('32') ) )
 
 longueur = 2
 nb_tentative = 4 
