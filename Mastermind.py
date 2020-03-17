@@ -11,9 +11,9 @@ def marstermind(pions= 2, couleurs= 4):
     secret = [str(random.randint(1,couleurs)) for i in range(pions)]
     while True:
         resultat = list(secret) 
-        gameur = list(input("tirage" + str(i) + ";"))
+        gamer = list(input("tirage" + str(i) + ";"))
         # faut configurer si la personne ne trouve pas le code
-        if len(gameur) == 0:
+        if len(gamer) == 0:
             return "vous n'avez pas réussit"
         i += 1 
 
@@ -21,15 +21,15 @@ def marstermind(pions= 2, couleurs= 4):
         bien_place, mal_place = 0,0
         
         # la position des pions est mal placé
-        for a, valeur in enumerate(gameur):
+        for a, valeur in enumerate(gamer):
             if valeur in secret:
                 mal_place += 1
                 secret[secret.index(valeur)] = '$'
         # la position des pions bien placé
-        for b, valeur in enumerate(gameur):
+        for b, valeur in enumerate(gamer):
           if valeur == resultat[b]:
               bien_place += 1 
-              gameur[i] = '♟'
+              gamer[i] = '♟'
               resultat[i] = '$'
           if  bien_place == 2: 
               return 'youpi! tu as trouvé le secret'
