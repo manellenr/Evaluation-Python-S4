@@ -3,8 +3,7 @@
 Created on Tue Mar 17 18:36:00 2020
 @author: nouar manelle
 """
-
-import random, sys
+import random
 # création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 6 couleurs
 
 def marstermind(pions= 2, couleurs= 4):
@@ -51,6 +50,9 @@ def afficher_couleurchoisi():
 afficher_couleurchoisi()
 
 def result_secret():
-    code = '' # le résultat secret renvoie une chaine de charactères
+    code = " " # le résultat secret renvoie une chaine de charactères
+    for i in range(0,longueur):
+        position_nb = random.randint(0,len(col) - 1)
+        code = col[position_nb] + code
     return code    
 result_secret()
