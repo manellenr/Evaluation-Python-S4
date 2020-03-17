@@ -19,13 +19,14 @@ def marstermind(pions= 2, couleurs= 4):
 
         # ensuite on va compter les pions bien placer et mal placé mais on les initiales à zéro vu que la partie à pas débuter
         bien_place, mal_place = 0,0
-        for a, valeur in enumerate(gameur):# pour savoir la position des pions est mal placé
+        
+        # la position des pions est mal placé
+        for a, valeur in enumerate(gameur):
             if valeur in secret:
                 mal_place += 1
-                # si le nombre est mal placé on augmente de 1 pour continuer à trouver les autres pions
                 secret[secret.index(valeur)] = '$'
-        
-        for b, valeur in enumerate(gameur):# pour savoir la position des pions bien placé
+        # la position des pions bien placé
+        for b, valeur in enumerate(gameur):
           if valeur == resultat[b]:
               bien_place += 1 
               gameur[i] = '♟'
@@ -43,18 +44,20 @@ import random
 
 longueur = 2
 nb_tentative = 4
-couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
+# liste des choix de couleurs possibles
+couleurs = ['bleu','rose', 'or','argent'] 
 col = []
 for i in couleurs :
     col.append(i[0])
 
 def afficher_couleurchoisi():
-    for i in couleurs: # on va chercher les couleurs dans la liste
+    for i in couleurs: 
         print(i)
 print(afficher_couleurchoisi())
 
+# le résultat secret renvoie une chaine de charactères
 def result_secret():
-    code_secret = " " # le résultat secret renvoie une chaine de charactères
+    code_secret = " " 
     for i in range(0,longueur):
         position_nb = random.randint(0,len(col) - 1)
         code_secret = col[position_nb] + code_secret
