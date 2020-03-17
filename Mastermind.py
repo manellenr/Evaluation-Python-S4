@@ -56,7 +56,7 @@ def result_secret():
     for i in range(0,longueur):
         position_nb = random.randint(0,len(col) - 1)
         code_secret = col[position_nb] + code_secret
-    return code    
+    return code_secret   
 
 # test
 print(result_secret())
