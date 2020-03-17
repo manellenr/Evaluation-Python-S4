@@ -114,3 +114,17 @@ print(mettre_pions())
 
 mettre_pions()
 
+# on veut un binome de deux pions  
+res = result_secret()
+binome = "False"
+for x in range(nb_test):
+while binome == "False" :
+    binome = mettre_pions()
+r = evaluation_code(binome,res)
+if r[0] == 2 :
+    print (" vous avec réussi le Mastermind ")
+j = r[0]
+else :
+    print(" Vous avez échoue :",j)
+
+
