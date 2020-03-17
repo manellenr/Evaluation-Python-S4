@@ -3,6 +3,6 @@ Projet Mastermind
 
 Author: nouar manelle 
 
-le jeu consiste à savoir combien il y a de pions qui sont bien placé et combien de pions sont mal placé. Je vais devoir modéliser le nombre de couleurs des pions. Ainsi que le nombre de colonne à modéliser, pour mettre les pions. Je vais devoir faire un tirage répétitive de couleurs, définir combien de fois le gameur à le droit de se tromper. Et à la fin il faudra comparer la réponse du joueur avec la réponse de la série secrète du mastermind.
+le jeu consiste à savoir combien il y a de pions qui sont bien placé et combien de pions sont mal placé. Je vais devoir modéliser le nombre de couleurs des pions. Ainsi que le nombre de colonne à modéliser, pour mettre les pions. Je vais devoir faire un tirage aléatoire de couleurs, définir combien de fois le gameur à le droit de se tromper. Et à la fin il faudra comparer la réponse du joueur avec la réponse de la série secrète du mastermind.
 
  
