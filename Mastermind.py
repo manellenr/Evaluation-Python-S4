@@ -14,7 +14,7 @@ def marstermind(pions= 2, couleurs= 4):
         gamer = list(input("tirage" + str(i) + ";"))
         # faut configurer pour voir si la personne ne trouve pas le code
         if len(gamer) == 0:
-            return "vous n'avez pas réussit"
+            return "vous n'avez pas réussi"
         i += 1 
 
         # ensuite on va compter les pions bien placer et mal placé mais on les initiales à zéro vu que la partie à pas débuter
@@ -31,7 +31,7 @@ def marstermind(pions= 2, couleurs= 4):
               bien_place += 1 
               gamer[i] = '♟'
               resultat[i] = '$'
-          if  bien_place == 2: 
+          elif bien_place == 2: 
               return 'youpi! tu as trouvé le secret'
         print(bien_place,":gagner",mal_place,":perdu")
          
