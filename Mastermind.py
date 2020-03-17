@@ -95,4 +95,14 @@ print(evaluation_code('or','ba'))
 
 # le gamer doit mettre ces pions pour ca je créé une nouvelle fonction
 def  mettre_pions():
-mettre_pions()
+    e = input("mettez vos pions : ")
+    if len(e) != len(longueur):
+        print("vous n'avez mal choisi la longueur des pions ")
+        return False
+    for u in e :
+        if u not in col : 
+            return False
+    Else:
+        return e
+# test
+print(mettre_pions())
