@@ -12,7 +12,7 @@ def marstermind(pions= 2, couleurs= 4):
     while True:
         resultat = list(secret) 
         gamer = list(input("tirage" + str(i) + ";"))
-        # faut configurer si la personne ne trouve pas le code
+        # faut configurer pour voir si la personne ne trouve pas le code
         if len(gamer) == 0:
             return "vous n'avez pas réussit"
         i += 1 
@@ -65,8 +65,7 @@ print(result_secret())
 
 
 def evaluation_code(code_secret, code_entree):
-    bien_place = 0
-    mal_place = 0
+    bien_place, mal_place = 0, 0
     couleurs_secret = list(code_secret) 
     couleurs_choisi = list(code_entree)
         
