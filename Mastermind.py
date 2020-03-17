@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 17 23:22:00 2020
+Created on Tue Mar 17 00:25 2020
 @author: nouar manelle
 """
 import random
@@ -88,13 +88,10 @@ def evaluation_code(code_secret, code_entree):
 
 # test
     
-print(evaluation_code('br','oa'))
-print(evaluation_code('br','ao'))
-print(evaluation_code('rb','oa'))
-print(evaluation_code('rb','ao'))
-print(evaluation_code('ar','bo'))
-print(evaluation_code('ro','ba'))
-print(evaluation_code('or','ba'))
+print(evaluation_code('br','br')) # affiche [2, 2]
+print(evaluation_code('br','bo')) # affiche [1, 1]
+print(evaluation_code('rb','oa')) # affiche [0, 0]
+print(evaluation_code('rb','rb')) # affiche [2, 2]
 
 evaluation_code()
 
