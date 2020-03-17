@@ -52,14 +52,21 @@ def afficher_couleurchoisi():
 print(afficher_couleurchoisi())
 
 def result_secret():
-    code = " " # le résultat secret renvoie une chaine de charactères
+    code_secret = " " # le résultat secret renvoie une chaine de charactères
     for i in range(0,longueur):
         position_nb = random.randint(0,len(col) - 1)
-        co = col[position_nb] + code
-    return co    
+        code_secret = col[position_nb] + code_secret
+    return code    
 
 # test
 print(result_secret())
+
+
+def evaluation_code(code_secret, code_entree):
+    bien_place, mal_place = 0,0
+    couleurs_secret = list(code_secret)
+    couleurs_choisi = list(code_entree)
+
 
 
 
