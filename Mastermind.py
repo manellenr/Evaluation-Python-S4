@@ -41,23 +41,25 @@ marstermind()
 print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
 
-import random
-
-
 longueur = 2
 nb_tentative = 4
-couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
+
+# liste des choix de couleurs possibles
+couleurs = ['bleu','rose', 'or','argent'] 
+
 col = []
 for i in couleurs :
     col.append(i[0])
 
+# on va chercher les couleurs dans la liste
 def afficher_couleurchoisi():
-    for i in couleurs: # on va chercher les couleurs dans la liste
+    for i in couleurs: 
         print(i)
 print(afficher_couleurchoisi())
 
+# le résultat secret renvoie une chaine de charactères
 def result_secret():
-    code_secret = " " # le résultat secret renvoie une chaine de charactères
+    code_secret = " " 
     for i in range(0,longueur):
         position_nb = random.randint(0,len(col) - 1)
         code_secret = col[position_nb] + code_secret
