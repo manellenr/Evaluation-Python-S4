@@ -39,6 +39,8 @@ marstermind()
 # test
 print( list(enumerate('32') ) )
 
+import random
+
 longueur = 2
 nb_tentative = 4
 couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
@@ -70,8 +72,10 @@ def evaluation_code(code_secret, code_entree):
     for v in range(len(couleurs_choisi)):    
         if couleurs_choisi[v] == couleurs_secret[v]:
             bien_place += 1
-    return 
+    return [bien_place, mal_place]
 
+# test
+print(evaluation_code())
 
 
 
