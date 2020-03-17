@@ -66,10 +66,7 @@ def result_secret():
 print(result_secret())
 
 result_secret()
-
-def evaluation_code(code_secret, code_entree):
-    bien_place = 0
-    mal_place = 0
+def evaluation_code(code_secret=0, code_entree=0):
     couleurs_secret = list(code_secret) 
     couleurs_choisi = list(code_entree)
         
