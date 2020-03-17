@@ -93,7 +93,7 @@ print(evaluation_code('br','bo')) # affiche [1, 1]
 print(evaluation_code('rb','oa')) # affiche [0, 0]
 print(evaluation_code('rb','rb')) # affiche [2, 2]
 
-evaluation_code()
+evaluation_code('br','br') 
 
 def  mettre_pions():
     e = input("mettez vos pions : ")
