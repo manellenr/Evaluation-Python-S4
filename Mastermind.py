@@ -102,7 +102,7 @@ def  mettre_pions():
     for u in e :
         if u not in col : 
             return False
-    Else:
+    else:
         return e
 # test
 print(mettre_pions())
