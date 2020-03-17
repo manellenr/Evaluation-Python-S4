@@ -123,7 +123,7 @@ while binome == "False" :
 r = evaluation_code(binome,res)
 if r[0] == 2 :
     print (" vous avec réussi le Mastermind ")
-j = r[0]
+j += r[0]
 else :
     print(" Vous avez échoue :",j)
 
