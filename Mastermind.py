@@ -87,6 +87,9 @@ def evaluation_code(code_secret, code_entree):
 # test
     
 print(evaluation_code('br','oa'))
-print(evaluation_code('or','ba'))
-print(evaluation_code('ar','ba'))
+print(evaluation_code('br','ao'))
+print(evaluation_code('rb','oa'))
+print(evaluation_code('rb','ao'))
+print(evaluation_code('ar','bo'))
+print(evaluation_code('ro','ba'))
 print(evaluation_code('or','ba'))
