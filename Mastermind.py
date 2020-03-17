@@ -42,7 +42,7 @@ print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
 
 longueur = 2
-nb_tentative = 4
+nb_test = 4
 couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
 col = []
 for i in couleurs :
@@ -84,7 +84,7 @@ def evaluation_code(code_secret, code_entree):
             couleurs_secret[gamer] = '*'
     return [bien_place, mal_place]
 
-# test
+# test   
 print(evaluation_code('br','oa'))
 print(evaluation_code('br','ao'))
 print(evaluation_code('rb','oa'))
@@ -93,7 +93,6 @@ print(evaluation_code('ar','bo'))
 print(evaluation_code('ro','ba'))
 print(evaluation_code('or','ba'))
 
-# le gamer doit mettre ces pions pour ca je créé une nouvelle fonction
 def  mettre_pions():
     e = input("mettez vos pions : ")
     if len(e) != len(longueur):
@@ -106,5 +105,3 @@ def  mettre_pions():
         return e
 # test
 print(mettre_pions())
-
-mettre_pions()
