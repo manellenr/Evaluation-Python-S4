@@ -85,7 +85,6 @@ def evaluation_code(code_secret, code_entree):
     return [bien_place, mal_place]
 
 # test
-    
 print(evaluation_code('br','oa'))
 print(evaluation_code('br','ao'))
 print(evaluation_code('rb','oa'))
@@ -93,3 +92,7 @@ print(evaluation_code('rb','ao'))
 print(evaluation_code('ar','bo'))
 print(evaluation_code('ro','ba'))
 print(evaluation_code('or','ba'))
+
+# le gamer doit mettre ces pions pour ca je créé une nouvelle fonction
+def  mettre_pions():
+mettre_pions()
