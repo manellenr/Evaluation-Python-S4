@@ -40,8 +40,8 @@ marstermind()
 print( list(enumerate('32') ) )
 
 longueur = 2
-nb_tentative = 6
-couleurs = ['bleu','rose','vert','jaune', 'or','argent'] # liste des choix de couleurs possibles
+nb_tentative = 4
+couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
 col = []
 for i in couleurs :
     col.append(i[0])
@@ -56,16 +56,21 @@ def result_secret():
     for i in range(0,longueur):
         position_nb = random.randint(0,len(col) - 1)
         code_secret = col[position_nb] + code_secret
-    return code_secret   
+    return code_secret    
 
 # test
 print(result_secret())
 
 
 def evaluation_code(code_secret, code_entree):
-    bien_place, mal_place = 0,0
+    bien_place, mal_place = 0, 0
     couleurs_secret = list(code_secret)
     couleurs_choisi = list(code_entree)
+        
+    for v in range(len(couleurs_choisi)):    
+        if couleurs_choisi[v] == couleurs_secret[v]:
+            bien_place += 1
+    return 
 
 
 
