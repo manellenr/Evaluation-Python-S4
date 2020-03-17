@@ -52,8 +52,10 @@ print( list(enumerate('32') ) )
 
 longueur = 2
 nb_tentative = 6
-couleurs = ['bleu','rose','vert','jaune'] # liste des choix de couleurs possibles
-col = [couleurs[i][0] for i in range(len(couleurs))]
+couleurs = ['bleu','rose','vert','jaune', 'or','argent'] # liste des choix de couleurs possibles
+col = []
+for i in couleurs :
+    col.append(i[0])
 
 def afficher_couleurchoisi():
     for i in couleurs: # on va chercher les couleurs dans la liste
