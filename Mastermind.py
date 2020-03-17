@@ -73,6 +73,15 @@ def evaluation_code(code_secret, code_entree):
     for v in range(len(couleurs_choisi)):    
         if couleurs_choisi[v] == couleurs_secret[v]:
             bien_place += 1
+            couleurs_secret[v] = '*'
+            couleurs_choisi[v] = '*'
+            
+    for x in range(len(couleurs_choisi)):
+        if couleurs_choisi[x] in couleurs_secret and couleurs_choisi != '*':
+            mal_place += 1
+            c = couleurs_choisi[x]
+            gamer = couleurs_secret.index(c)
+            couleurs_secret[gamer] = '*'
     return [bien_place, mal_place]
 
 # test
@@ -80,3 +89,4 @@ def evaluation_code(code_secret, code_entree):
 print(evaluation_code('br','oa'))
 print(evaluation_code('or','ba'))
 print(evaluation_code('ar','ba'))
+print(evaluation_code('or','ba'))
