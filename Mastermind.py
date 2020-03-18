@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 17 00:25 2020
+Created on Tue Mar 18 00:25 2020
 @author: nouar manelle
 """
 ################################################ Programme principal ################################################
@@ -104,6 +104,19 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 
 evaluation_code('br','br') 
 
+def  mettre_pions():
+    e = input(" mettez vos pions : ")
+    if len(e) != len(longueur):
+        print(" vous n'avez mal choisi la longueur des pions ")
+        return False
+    for u in e :
+        if u not in col : 
+            return False
+    else:
+        return e
+    
+mettre_pions()
+
 ################################################ Doctests ################################################
 
 # doctest testmod
@@ -185,9 +198,6 @@ class jeu(unittest.TestCase):
         self.assertFalse(False, ' vous avez perdu le jeu :(')
         
 ################################################ Autre ################################################
-
-print( list(enumerate('32') ) )
-print( list(enumerate('12') ) )
 
 code_secret = input(" enter un code: ")
 pions = input(" entrer des pions : ")
