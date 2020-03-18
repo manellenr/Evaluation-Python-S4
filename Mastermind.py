@@ -142,8 +142,6 @@ class marstermind(object):
     
     help(evaluation_code)
     
-    evaluation_code('manelle', 'nouar')
-    
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
