@@ -105,6 +105,8 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 evaluation_code('br','br') 
 
 ################################################ Doctests ################################################
+
+# doctest testmod
 class marstermind(object):
     """
     cette classe nous donne les différentes
@@ -144,8 +146,6 @@ class marstermind(object):
     evaluation_code.__doc__ 
     help(evaluation_code)
     
-    #evaluation_code('manelle', 'nouar')
-    
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
@@ -156,7 +156,7 @@ couleurs = ['bleu','rose', 'or','argent']
 print('dict:', {x: len(x) for x in couleurs})
 print('set :', set(couleurs))
 
-#doctest_private_tests.py
+# doctest private tests
 import doctest_private_tests_external
 
 __test__ = {
