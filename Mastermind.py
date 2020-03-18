@@ -150,6 +150,12 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
     
+# doctest hashed values
+couleurs = ['bleu','rose', 'or','argent']
+
+print('dict:', {x: len(x) for x in couleurs})
+print('set :', set(couleurs))
+    
 ################################################ Tests unitaires ################################################
     
 
