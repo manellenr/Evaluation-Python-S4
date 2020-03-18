@@ -3,6 +3,7 @@
 Created on Tue Mar 17 00:25 2020
 @author: nouar manelle
 """
+################################################ Programme principal ################################################
 import random
 
 while True:
@@ -50,10 +51,6 @@ def marstermind(pions= 2, couleurs= 4):
          
 marstermind()       
 
-# test
-print( list(enumerate('32') ) )
-print( list(enumerate('12') ) )
-
 longueur = 2
 nb_test = 4
 couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
@@ -75,7 +72,6 @@ def result_secret():
         code_secret = col[position_nb] + code_secret
     return code_secret    
 
-# test
 print(result_secret())
 
 result_secret()
@@ -98,8 +94,6 @@ def evaluation_code(code_secret, code_entree):
             gamer = couleurs_secret.index(c)
             couleurs_secret[gamer] = '*'
     return [bien_place, mal_place]
-
-# test
     
 print(evaluation_code('br','br')) # affiche [2, 2]
 print(evaluation_code('br','bo')) # affiche [1, 1]
@@ -108,39 +102,13 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 
 evaluation_code('br','br') 
 
-# tester des programmes
+################################################ tester des programmes ################################################
+
+
+print( list(enumerate('32') ) )
+print( list(enumerate('12') ) )
 
 code_secret = input(" enter un code: ")
-
-def analyse(code_secret,code_entree):
- 
-    a =0
-    for i in range(len(code_secret)):
-        if code_secret[i] == code_entree[i]:
-            a = a + 1
- 
-    return( a )
- 
-code_entree = "len(code_secret)"
- 
-while analyse(code_secret,code_entree) != len(code_secret):
- 
-    tour = True
-    while tour :
-        code_entree = input(" Enter un code " + str(len(code_secret)) )
-        print(" ")
-        if (len(code_secret)!= len(code_entree)):
-            print(" Erreur ! " + str(len(code_entree)) )
-        tour = (len(code_secret) != len(code_entree))
- 
- 
- 
-    if analyse(code_secret,code_entree) != len(code_secret):
-        print(" c'est pas le code " + str(analyse(code_secret,code_entree)) + " un mot est bien placé ")
- 
-    
-print(" Vous avez gagné le Mastermind :) ! ")
-
 
 pions = input(" entrer des pions : ")
 code_secret = input(" entrer un code secret ")
