@@ -5,8 +5,12 @@ Created on Tue Mar 18 00:25 2020
 @author: nouar manelle
 """
 ################################################ Programme principal ################################################
+
 import random
 from random import shuffle
+
+print(" Bienvenue ! ")
+print(" Découvrez le jeu du Mastermind ")
 
 while True:
     partie = input(" Avez-vous déja jouer au Mastermind ? ")
