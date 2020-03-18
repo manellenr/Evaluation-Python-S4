@@ -4,6 +4,19 @@ Created on Tue Mar 17 00:25 2020
 @author: nouar manelle
 """
 import random
+
+while True:
+    partie = input(" Avez-vous déja jouer au Mastermind ? ")
+    if partie == 'oui' or partie == 'non':
+        break
+
+while True:
+    while True:
+        level = input(" Choisissez le level : ")
+        if level == 'facile' or level == 'normal' or level == 'difficile':
+            break
+        print(" Changer de niveau : ")
+
 # création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 6 couleurs
 
 def marstermind(pions= 2, couleurs= 4):
