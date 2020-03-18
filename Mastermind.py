@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Created on Tue Mar 17 00:25 2020
@@ -105,6 +106,16 @@ evaluation_code('br','br')
 
 ################################################ tester des programmes ################################################
 
+#doctrings
+
+def evaluer(code_secret, code_entree):
+    """
+        entrer un code et vérifier si c'est le bon code
+        secret.
+    """
+    return code_secret == code_secret
+help(evaluer)
+evaluer('manelle', 'julie')
 
 print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
