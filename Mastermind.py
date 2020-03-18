@@ -58,7 +58,7 @@ afficher_couleurchoisi()
 def result_secret():
     code_secret = " " # le résultat secret renvoie une chaine de charactères
     for i in range(longueur):
-        position_nb = random.randint(len(col) - 1)
+        position_nb = random.randint(0, len(col) - 1)
         code_secret = col[position_nb] + code_secret
     return code_secret    
 
