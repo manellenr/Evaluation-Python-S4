@@ -142,3 +142,9 @@ while analyse(code_secret,code_entree) != len(code_secret):
 print(" Vous avez gagné le Mastermind :) ! ")
 
 
+pions = input(" entrer des pions : ")
+code_secret = input(" entrer un code secret ")
+if code_secret.lower() in pions.lower():
+    print( " mot de passe trouvé ! " )
+
+
