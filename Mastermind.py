@@ -137,14 +137,19 @@ class marstermind(object):
         entrer un code et vérifier si c'est le bon code
         secret.
         """
-        code_secret == code_secret
-    evaluation_code.__doc__ 
+        self.position = (code_secret, code_entree)
+    def __str__(self):
+        return f"code indéfinie de position {self.position}" 
     
+    evaluation_code.__doc__ 
     help(evaluation_code)
+    
+    #evaluation_code('manelle', 'nouar')
     
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+    
 
 ################################################ Autres ################################################
 
