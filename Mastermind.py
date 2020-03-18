@@ -104,9 +104,7 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 
 evaluation_code('br','br') 
 
-################################################ tester des programmes ################################################
-
-#doctrings
+################################################ doctrings ################################################
 
 def evaluer(code_secret, code_entree):
     """
@@ -115,7 +113,32 @@ def evaluer(code_secret, code_entree):
     """
     return code_secret == code_secret
 help(evaluer)
-evaluer('manelle', 'julie')
+evaluer('manelle', 'nouar')
+
+class couleurs(object):
+    """
+    cette classe nous donne les différentes
+    couleurs des pions qui sont déja placé
+    """
+    pass
+    
+    def mal_place(self):
+        """
+        retourne un objet mal placé
+        """
+        pass
+    
+    mal_place.__doc__
+    
+    def bien_place(self):
+        """
+        retourne un objet bien placé
+        """
+        pass
+    
+    bien_place.__doc__
+    
+################################################ Autres ################################################
 
 print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
