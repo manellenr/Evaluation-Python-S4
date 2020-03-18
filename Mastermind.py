@@ -115,11 +115,24 @@ code_secret = input(" entrer un code secret ")
 if code_secret.lower() in pions.lower():
     print( " mot de passe trouvé ! " )
 
+
 cod = "12"
 li = list( cod )
 print( cod, li )
 
 liste_couleurs = list(couleurs)
-# couleurs aléatoire 
+
+# couleurs aléatoire  
 shuffle(liste_couleurs)
+print(couleurs, liste_couleurs)
+
+# analyse des bien placé et mal placée
+x = 0
+for valeur in couleurs:
+    if liste_couleurs[x] == valeur :
+        print(" couleur ", valeur,  " à la place ", x)
+    else:
+        print(" couleur à la place ", x)
+
+    x += 1
 
