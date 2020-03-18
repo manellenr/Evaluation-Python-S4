@@ -155,6 +155,21 @@ couleurs = ['bleu','rose', 'or','argent']
 
 print('dict:', {x: len(x) for x in couleurs})
 print('set :', set(couleurs))
+
+#doctest_private_tests.py
+import doctest_private_tests_external
+
+__test__ = {
+    'numbers': """
+>>> evaluation_code('br','br') 
+[2, 2]
+
+>>> evaluation_code('br','bo')
+[1, 1]
+""",
+
+    'external': doctest_private_tests_external,
+}
     
 ################################################ Tests unitaires ################################################
     
