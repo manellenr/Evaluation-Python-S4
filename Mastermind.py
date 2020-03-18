@@ -147,4 +147,11 @@ code_secret = input(" entrer un code secret ")
 if code_secret.lower() in pions.lower():
     print( " mot de passe trouvé ! " )
 
+cod = "12"
+li = list( cod )
+print( cod, li )
+
+liste_couleurs = list(couleurs)
+# couleurs aléatoire 
+shuffle(liste_couleurs)
 
