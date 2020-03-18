@@ -95,32 +95,4 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 
 evaluation_code('br','br') 
 
-def  mettre_pions():
-    e = input("mettez vos pions : ")
-    if len(e) != len(longueur):
-        print("vous n'avez mal choisi la longueur des pions ")
-        return False
-    for u in e :
-        if u not in col : 
-            return False
-    else:
-        return e
-# test
-print(mettre_pions())
-
-mettre_pions()
-
-# on veut un binome de deux pions  
-res = result_secret()
-binome = "False"
-for x in range(nb_test):
-while binome == "False" :
-    binome = mettre_pions()
-r = evaluation_code(binome,res)
-if r[0] == 2 :
-    print (" vous avec réussi le Mastermind ")
-j += r[0]
-else :
-    print(" Vous avez échoue :",j)
-
 
