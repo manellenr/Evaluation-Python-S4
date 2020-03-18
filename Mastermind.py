@@ -17,7 +17,7 @@ while True:
             break
         print(" Changer de niveau : ")
 
-# création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 6 couleurs
+# création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 4 couleurs
 
 def marstermind(pions= 2, couleurs= 4):
     i = 1 
