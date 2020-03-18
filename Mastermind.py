@@ -173,7 +173,17 @@ __test__ = {
     
 ################################################ Tests unitaires ################################################
     
+import unittest
 
+# unittest truth 
+class jeu(unittest.TestCase):
+
+    def testAssertTrue(self):
+        self.assertTrue(True, ' Vous avez gagné le jeu :) ')
+
+    def testAssertFalse(self):
+        self.assertFalse(False, ' vous avez perdu le jeu :(')
+        
 ################################################ Autre ################################################
 
 print( list(enumerate('32') ) )
