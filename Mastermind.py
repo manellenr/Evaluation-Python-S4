@@ -5,6 +5,7 @@ Created on Tue Mar 17 00:25 2020
 """
 ################################################ Programme principal ################################################
 import random
+from random import shuffle
 
 while True:
     partie = input(" Avez-vous déja jouer au Mastermind ? ")
