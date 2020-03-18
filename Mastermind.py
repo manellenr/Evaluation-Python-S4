@@ -108,4 +108,37 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 
 evaluation_code('br','br') 
 
+# tester des programmes
+
+code_secret = input(" enter un code: ")
+
+def analyse(code_secret,code_entree):
+ 
+    a =0
+    for i in range(len(code_secret)):
+        if code_secret[i] == code_entree[i]:
+            a = a + 1
+ 
+    return( a )
+ 
+code_entree = "len(code_secret)"
+ 
+while analyse(code_secret,code_entree) != len(code_secret):
+ 
+    tour = True
+    while tour :
+        code_entree = input(" Enter un code " + str(len(code_secret)) )
+        print(" ")
+        if (len(code_secret)!= len(code_entree)):
+            print(" Erreur ! " + str(len(code_entree)) )
+        tour = (len(code_secret) != len(code_entree))
+ 
+ 
+ 
+    if analyse(code_secret,code_entree) != len(code_secret):
+        print(" c'est pas le code " + str(analyse(code_secret,code_entree)) + " un mot est bien placé ")
+ 
+    
+print(" Vous avez gagné le Mastermind :) ! ")
+
 
