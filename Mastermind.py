@@ -62,7 +62,7 @@ for i in couleurs :
     col.append(i[0])
 
 def afficher_couleurchoisi():
-    for i in couleurs: # on va chercher les couleurs dans la liste
+    for i in couleurs:
         print(i)
 print(afficher_couleurchoisi())
 
