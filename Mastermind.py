@@ -105,39 +105,49 @@ print(evaluation_code('rb','rb')) # affiche [2, 2]
 evaluation_code('br','br') 
 
 ################################################ doctrings ################################################
-
-def evaluer(code_secret, code_entree):
-    """
-        entrer un code et vérifier si c'est le bon code
-        secret.
-    """
-    return code_secret == code_secret
-help(evaluer)
-evaluer('manelle', 'nouar')
-
-class couleurs(object):
+class marstermind(object):
     """
     cette classe nous donne les différentes
-    couleurs des pions qui sont déja placé
+    pions qui sont déja placé dans le jeu
     """
     pass
     
-    def mal_place(self):
+    def afficher_couleurchoisi(self):
         """
-        retourne un objet mal placé
-        """
-        pass
-    
-    mal_place.__doc__
-    
-    def bien_place(self):
-        """
-        retourne un objet bien placé
+        retourne un objet qui est la couleur 
+        qu'on a choisi        
         """
         pass
     
-    bien_place.__doc__
+    afficher_couleurchoisi.__doc__
+    help(afficher_couleurchoisi)
     
+    def result_secret(self):
+        """
+        retourne un objet qui représente le 
+        code secret du mastermind
+        """
+        pass
+    
+    result_secret.__doc__
+    help(result_secret)
+    
+    def evaluation_code(self,code_secret, code_entree):
+        """
+        entrer un code et vérifier si c'est le bon code
+        secret.
+        """
+        code_secret == code_secret
+    evaluation_code.__doc__ 
+    
+    help(evaluation_code)
+    
+    evaluation_code('manelle', 'nouar')
+    
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
 ################################################ Autres ################################################
 
 print( list(enumerate('32') ) )
