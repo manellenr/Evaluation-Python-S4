@@ -150,19 +150,18 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
     
-################################################ Doctests ################################################
+################################################ Tests unitaires ################################################
     
 
-################################################ Tests unitaires ################################################
+################################################ Autre ################################################
 
 print( list(enumerate('32') ) )
 print( list(enumerate('12') ) )
 
 code_secret = input(" enter un code: ")
-
 pions = input(" entrer des pions : ")
 code_secret = input(" entrer un code secret ")
-if code_secret.lower() in pions.lower():
+if code_secret == pions :
     print( " mot de passe trouvé ! " )
 
 
