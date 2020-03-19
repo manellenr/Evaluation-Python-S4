@@ -38,7 +38,8 @@ def marstermind(pions= 2, couleurs= 4):
         i += 1 
 
         # ensuite on va compter les pions bien placer et mal placé mais on les initiales à zéro vu que la partie à pas débuter
-        bien_place, mal_place = 0,0
+        bien_place = 0
+        mal_place = 0
         
         # la position des pions est mal placé
         for a, valeur in enumerate(gamer):
