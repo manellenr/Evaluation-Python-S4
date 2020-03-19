@@ -169,7 +169,6 @@ if __name__ == "__main__":
     doctest.testmod()
     
 # doctest hashed values
-couleurs = ['bleu','rose', 'or','argent']
 
 print('dict:', {x: len(x) for x in couleurs})
 print('set :', set(couleurs))
