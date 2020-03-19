@@ -201,13 +201,15 @@ class jeu(unittest.TestCase):
     def testAssertFalse(self):
         self.assertFalse(False, ' vous avez perdu le jeu :(')
         
-################################################ Autre ################################################
+################################################ Autres tests ################################################
 
-code_secret = input(" enter un code: ")
+code_secret = input(" entrer un code secret : ")
 pions = input(" entrer des pions : ")
-code_secret = input(" entrer un code secret ")
 if code_secret == pions :
     print( " mot de passe trouvé ! " )
+else : 
+    print("Vous avez pas trouvé le code secret ! ")
+
 
 
 cod = "12"
