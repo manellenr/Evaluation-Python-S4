@@ -1,2 +1,2 @@
 language = "python3"
-run = "python test_fichier.py"
+run = "python Mastermind.py"
