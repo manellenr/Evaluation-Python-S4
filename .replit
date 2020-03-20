@@ -1,2 +1,2 @@
 language = "python3"
-run = "python Mastermind.py"
+run = "python jeu.py"

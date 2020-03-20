@@ -7,7 +7,7 @@ Created on Tue Mar 18 00:25 2020
 ################################################ Programme principal ################################################
 
 import random
-from random import shuffle
+
 
 print(" Bienvenue ! ")
 print(" Découvrez le jeu du Mastermind ")

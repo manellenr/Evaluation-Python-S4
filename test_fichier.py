@@ -1,9 +1,27 @@
-from fichier import exemple
+from Mastermind import doctest
+import doctest_private_tests_external
+from random import shuffle
 
-################################################ Doctests ################################################
+#import doctest
+################################################ #Doctests ################################################
 
 # doctest testmod
-
+class level:
+    """
+    Cette classe permet de créer les différents levels
+    """
+    def __init__(self, niveau):
+        self.niveau = niveau
+        self.debut = 0
+    
+    def prog(self):
+      """
+      on veut programmer les niveaux
+      et les afficher. 
+      """   
+      pass
+    
+    
 class marstermind(object):
     """
     cette classe nous donne les différentes
@@ -44,17 +62,15 @@ class marstermind(object):
     help(evaluation_code)
     
 if __name__ == "__main__":
-    import doctest
+
     doctest.testmod()
     
 # doctest hashed values
-
+couleurs = ['bleu','rose', 'or','argent']
 print('dict:', {x: len(x) for x in couleurs})
 print('set :', set(couleurs))
 
 # doctest private tests
-import doctest_private_tests_external
-
 __test__ = {
     'numbers': """
 >>> evaluation_code('br','br') 
@@ -92,9 +108,10 @@ else :
 
 
 # couleurs aléatoire  
+liste_couleurs = list(couleurs)
 shuffle(liste_couleurs)
 print(couleurs, liste_couleurs)
-liste_couleurs = list(couleurs)
+
 
 # analyse des bien placé et mal placée
 x = 0

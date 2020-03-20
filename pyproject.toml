@@ -1,0 +1,13 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]
+
+[tool]
+[tool.poetry]
+authors = ["Manelle Nouar <manellenouar@yahoo.fr>"]
+description = ""
+name = "evaluation-python-s4-1"
+version = "0.1.0"
+[tool.poetry.dependencies]
+python = "^3.7"
+[tool.poetry.dev-dependencies]
