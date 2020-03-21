@@ -55,8 +55,8 @@ def marstermind(pions= 2, couleurs= 4):
          
 marstermind()
 
-longueur = 2
-nb_test = 4
+longueur = '2'
+nb_test = '4'
 couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
 
 col = random.choice(couleurs)
@@ -79,6 +79,12 @@ print(result_secret())
 
 result_secret()  
  
+longueur = '2'
+nb_test = '4'
+couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
+
+col = random.choice(couleurs)
+
 def evaluation_code(code_secret, code_entree):
     bien_place, mal_place = 0, 0
     couleurs_secret = list(code_secret) 
@@ -98,12 +104,7 @@ def evaluation_code(code_secret, code_entree):
             couleurs_secret[gamer] = '*'
     return [bien_place, mal_place]
     
-print(evaluation_code('br','br')) # affiche [2, 2]
-print(evaluation_code('br','bo')) # affiche [1, 1]
-print(evaluation_code('rb','oa')) # affiche [0, 0]
-print(evaluation_code('rb','rb')) # affiche [2, 2]
-
-evaluation_code('br','br') 
+print(evaluation_code('br','br')) # [2, 2]
 
 def  mettre_pions():
     e = input(" mettez vos pions : ")
