@@ -27,15 +27,15 @@ while True:
 # création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 4 couleurs
 
 def marstermind(pions= 2, couleurs= 4):
-    i = 1 
+    tour = 1 
     secret = [str(random.randint(1,couleurs)) for i in range(pions)]
     while True:
         resultat = list(secret) 
-        gamer = list(input("tirage" + str(i) + ";"))
+        gamer = list(input("tirage" + str(tour) + ";"))
         # faut configurer pour voir si la personne ne trouve pas le code
         if len(gamer) == 0:
             return "vous n'avez pas réussi"
-        i += 1 
+        tour += 1 
 
         # ensuite on va compter les pions bien placer et mal placé mais on les initiales à zéro vu que la partie à pas débuter
         bien_place = 0
@@ -56,7 +56,7 @@ def marstermind(pions= 2, couleurs= 4):
               return 'youpi! tu as trouvé le secret'
         print(bien_place,":gagner",mal_place,":perdu")
          
-marstermind()       
+marstermind()      
 
 longueur = 2
 nb_test = 4
