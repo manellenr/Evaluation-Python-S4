@@ -107,7 +107,7 @@ else :
 
 
 
-# La fonction shuffle est utilisé pour choisir une couleurs aléatoire.
+# La fonction shuffle est utilisé pour choisir une couleur aléatoire.
 liste_couleurs = list(couleurs)
 shuffle(liste_couleurs)
 print(couleurs, liste_couleurs)
