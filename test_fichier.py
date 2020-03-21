@@ -6,20 +6,23 @@ from random import shuffle
 ################################################ #Doctests ################################################
 
 # doctest testmod
-class level:
+lass level:
     """
-    Cette classe permet de créer les différents levels
+    on veut programmer les niveaux
+    et les afficher. 
     """
+      
     def __init__(self, niveau):
-        self.niveau = niveau
-        self.debut = 0
+        self.hearder = dict(levelniveau = niveau)
     
-    def prog(self):
-      """
-      on veut programmer les niveaux
-      et les afficher. 
-      """   
-      pass
+    def call(self, methode, parametres):
+        r = urllib2.r(self.url + methode[0] + '/' + methode[1], urllib.urlencode(parametres), self.hearder)
+       
+        try:
+            i = json.loads(urllib2.urlopen(r).read())
+            return i
+        except urllib2.HTTPError as error:
+            return dict(Error=str(error))
     
     
 class marstermind(object):
