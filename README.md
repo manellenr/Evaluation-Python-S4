@@ -26,7 +26,7 @@ La version a été testée uniquement sur Windows.
 - [Sam & Max : Dosctrings](http://sametmax.com/les-docstrings/)
 - [PyMOTW-3 : Doctest](https://pymotw.com/3/doctest/index.html)
 - [PyMOTW-3 : Unittest](https://pymotw.com/3/unittest/index.html)
-- [Python](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
+- [Python**TM](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
 - [The Mental Game of Python](https://www.youtube.com/watch?v=Uwuv05aZ6ug)
 
 
