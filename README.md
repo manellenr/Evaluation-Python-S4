@@ -15,6 +15,11 @@
  
 - Nouar Manelle
 
+## Prérequis
+
+La version a été testée uniquement sur Windows.
+- Version Python3
+
 ## Liens 
  
 - http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/
