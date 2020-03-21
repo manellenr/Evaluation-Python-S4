@@ -6,10 +6,9 @@ from random import shuffle
 ################################################ #Doctests ################################################
 
 # doctest testmod
-lass level:
+class level:
     """
-    on veut programmer les niveaux
-    et les afficher. 
+    Classe niveau. 
     """
       
     def __init__(self, niveau):
@@ -27,15 +26,13 @@ lass level:
     
 class marstermind():
     """
-    cette classe nous donne les différentes
-    pions qui sont déja placé dans le jeu
+    Classe du jeu
     """
     pass
     
     def afficher_couleurchoisi(self):
         """
-        retourne un objet qui est la couleur 
-        qu'on a choisi        
+        Classe choix aléatoire de la couleur        
         """
         pass
     
@@ -43,10 +40,7 @@ class marstermind():
     help(afficher_couleurchoisi)
     
     def result_secret(self):
-        """
-        retourne un objet qui représente le 
-        code secret du mastermind
-        """
+        
         pass
     
     result_secret.__doc__
@@ -54,7 +48,7 @@ class marstermind():
     
     def evaluation_code(self,code_secret, code_entree):
         """
-        entrer un code et vérifier si c'est le bon code
+        Evalution combinaisn
         secret.
         """
         self.position = (code_secret, code_entree)
@@ -88,7 +82,7 @@ __test__ = {
     'external': doctest_private_tests_external,
 }
 
-################################################ Tests unitaires ################################################
+################################################   Tests unitaires ################################################
     
 import unittest
 
@@ -101,4 +95,29 @@ class jeu(unittest.TestCase):
     def testAssertFalse(self):
         self.assertFalse(False, ' vous avez perdu le jeu :(')
         
+
+################################################ Autre tests ################################################
+
+code_secret = input(" entrer un code secret : ")
+pions = input(" entrer des pions : ")
+if code_secret == pions :
+    print( " mot de passe trouvé ! " )
+else : 
+    print("Vous avez pas trouvé le code secret ! ")
+
+
+
+# La fonction shuffle est utilisé pour choisir une couleurs aléatoire.
+liste_couleurs = list(couleurs)
+shuffle(liste_couleurs)
+print(couleurs, liste_couleurs)
+
+x = 0
+for valeur in couleurs:
+    if liste_couleurs[x] == valeur :
+        print(" pion ", valeur,  " à la place ", x)
+    else:
+        print(" pions à la place ", x)
+
+    x += 1
 

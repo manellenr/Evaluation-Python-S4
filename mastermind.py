@@ -30,12 +30,9 @@ def marstermind(pions= 2, couleurs= 4):
     while True:
         resultat = list(L) 
         gamer = list(input("tirage" + str(tour) + ";"))
-        # faut configurer pour voir si la personne ne trouve pas le code
         if len(gamer) == 0:
             return "vous n'avez pas réussi"
         tour += 1 
-
-        # ensuite on va compter les pions bien placer et mal placé mais on les initiales à zéro vu que la partie à pas débuter
         bien_place = 0
         mal_place = 0
         
@@ -57,8 +54,7 @@ marstermind()
 
 longueur = '2'
 nb_test = '4'
-couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
-
+couleurs = ['bleu','rose', 'or','argent'] 
 col = random.choice(couleurs)
 
 def afficher_couleurchoisi():
@@ -69,7 +65,7 @@ print(afficher_couleurchoisi())
 afficher_couleurchoisi()
 
 def result_secret():
-    code_secret = " " # le résultat secret renvoie une chaine de charactères
+    code_secret = " " 
     for i in range(longueur):
         position_nb = random.randint(0, len(col) - 1)
         code_secret = col[position_nb] + code_secret
@@ -114,32 +110,5 @@ def mettre_pions(e, col, longeur):
     
 mettre_pions()
 
-
-################################################ Docstring ################################################
-
-code_secret = input(" entrer un code secret : ")
-pions = input(" entrer des pions : ")
-if code_secret == pions :
-    print( " mot de passe trouvé ! " )
-else : 
-    print("Vous avez pas trouvé le code secret ! ")
-
-
-
-# couleurs aléatoire  
-liste_couleurs = list(couleurs)
-shuffle(liste_couleurs)
-print(couleurs, liste_couleurs)
-
-
-# analyse des bien placé et mal placée
-x = 0
-for valeur in couleurs:
-    if liste_couleurs[x] == valeur :
-        print(" pion ", valeur,  " à la place ", x)
-    else:
-        print(" pions à la place ", x)
-
-    x += 1
 
     
