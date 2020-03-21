@@ -7,7 +7,7 @@ Created on Tue Mar 18 00:25 2020
 ################################################ Programme principal ################################################
 
 import random
-
+'''
 
 print(" Bienvenue ! ")
 print(" Découvrez le jeu du Mastermind ")
@@ -23,7 +23,7 @@ while True:
         if level == 'facile' or level == 'normal' or level == 'difficile':
             break
         
-
+'''
 def marstermind(pions= 2, couleurs= 4):
     tour = 1 
     L = [str(random.randint(1,couleurs)) for a in range(pions)]

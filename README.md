@@ -12,16 +12,20 @@
 
 
 ## Auteur 
- 
-- Nouar Manelle
+
+###### - Nouar Manelle
 
 ## Prérequis
 
-La version a été testée uniquement sur Windows.
-- Python3
-
+###### La version a été testée uniquement sur Windows.
+###### - Python3
+## Installation
+```python
+poetry.lock
+pyproject.toml
+```
 ## Liens 
- 
+
 - [Sam & Max : Unittest](http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/)
 - [Sam & Max : Dosctrings](http://sametmax.com/les-docstrings/)
 - [PyMOTW-3 : Doctest](https://pymotw.com/3/doctest/index.html)
