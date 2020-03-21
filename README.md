@@ -18,7 +18,7 @@
 ## Prérequis
 
 La version a été testée uniquement sur Windows.
-- Version Python3
+- Python3
 
 ## Liens 
  
