@@ -24,7 +24,6 @@ while True:
             break
         
 
-# création d'une fonction mastermind qui par defaud à quatres chiffres du code secret à trouver et 4 couleurs
 def marstermind(pions= 2, couleurs= 4):
     tour = 1 
     L = [str(random.randint(1,couleurs)) for a in range(pions)]
@@ -44,7 +43,6 @@ def marstermind(pions= 2, couleurs= 4):
         for a, valeur in enumerate(gamer):
             if valeur in L:
                 mal_place += 1
-                L[L.index(valeur)] = '$'
         # la position des pions bien placé
         for a, valeur in enumerate(gamer):
           if valeur == resultat[a]:
@@ -55,8 +53,7 @@ def marstermind(pions= 2, couleurs= 4):
               return 'youpi! tu as trouvé le code'
         print(bien_place,":gagner",mal_place,":perdu")
          
-marstermind()    
- 
+marstermind()
 
 longueur = 2
 nb_test = 4
