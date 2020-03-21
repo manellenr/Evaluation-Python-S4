@@ -5,16 +5,16 @@ Le jeu consiste à savoir, combien il y a de pions bien placés et combien de pi
 
 ## Auteur <h3> 
  
-*Nouar Manelle
+- Nouar Manelle
 
 
 
 ## Liens <h3> 
  
-*http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/
-*http://sametmax.com/les-docstrings/
-*https://pymotw.com/3/doctest/index.html
-*https://pymotw.com/3/unittest/index.html
+- http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/
+- http://sametmax.com/les-docstrings/
+- https://pymotw.com/3/doctest/index.html
+- https://pymotw.com/3/unittest/index.html
 
 
  
