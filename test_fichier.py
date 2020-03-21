@@ -25,7 +25,7 @@ lass level:
             return dict(Error=str(error))
     
     
-class marstermind(object):
+class marstermind():
     """
     cette classe nous donne les différentes
     pions qui sont déja placé dans le jeu
