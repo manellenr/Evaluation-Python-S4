@@ -61,10 +61,12 @@ class marstermind(object):
     evaluation_code.__doc__ 
     help(evaluation_code)
     
-if __name__ == "__main__":
-
+def main():
+    print ("Bienvenue")
+if __name__ == '__main__':
     doctest.testmod()
-    
+    main()
+        
 # doctest hashed values
 couleurs = ['bleu','rose', 'or','argent']
 print('dict:', {x: len(x) for x in couleurs})
