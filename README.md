@@ -22,10 +22,10 @@ La version a été testée uniquement sur Windows.
 
 ## Liens 
  
-- [GitHub](http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/)
-- [GitHub](http://sametmax.com/les-docstrings/)
-- [GitHub](https://pymotw.com/3/doctest/index.html)
-- [GitHub](https://pymotw.com/3/unittest/index.html)
+- [sam&max](http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/)
+- [sam&max](http://sametmax.com/les-docstrings/)
+- [pymotw](https://pymotw.com/3/doctest/index.html)
+- [pymotw](https://pymotw.com/3/unittest/index.html)
 
 
  
