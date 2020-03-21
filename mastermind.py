@@ -7,7 +7,6 @@ Created on Tue Mar 18 00:25 2020
 ################################################ Programme principal ################################################
 
 import random
-'''
 
 print(" Bienvenue ! ")
 print(" Découvrez le jeu du Mastermind ")
@@ -23,7 +22,11 @@ while True:
         if level == 'facile' or level == 'normal' or level == 'difficile':
             break
         
-'''
+longueur = '2'
+nb_test = '4'
+couleurs = ['bleu','rose', 'or','argent'] 
+col = random.choice(couleurs)
+
 def marstermind(pions= 2, couleurs= 4):
     tour = 1 
     L = [str(random.randint(1,couleurs)) for a in range(pions)]
@@ -51,11 +54,6 @@ def marstermind(pions= 2, couleurs= 4):
         print(bien_place,":gagner",mal_place,":perdu")
          
 marstermind()
-
-longueur = '2'
-nb_test = '4'
-couleurs = ['bleu','rose', 'or','argent'] 
-col = random.choice(couleurs)
 
 def afficher_couleurchoisi():
     for i in couleurs:
