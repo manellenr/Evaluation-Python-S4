@@ -101,30 +101,4 @@ class jeu(unittest.TestCase):
     def testAssertFalse(self):
         self.assertFalse(False, ' vous avez perdu le jeu :(')
         
-################################################ Autres tests ################################################
-
-code_secret = input(" entrer un code secret : ")
-pions = input(" entrer des pions : ")
-if code_secret == pions :
-    print( " mot de passe trouvé ! " )
-else : 
-    print("Vous avez pas trouvé le code secret ! ")
-
-
-
-# couleurs aléatoire  
-liste_couleurs = list(couleurs)
-shuffle(liste_couleurs)
-print(couleurs, liste_couleurs)
-
-
-# analyse des bien placé et mal placée
-x = 0
-for valeur in couleurs:
-    if liste_couleurs[x] == valeur :
-        print(" pion ", valeur,  " à la place ", x)
-    else:
-        print(" pions à la place ", x)
-
-    x += 1
 
