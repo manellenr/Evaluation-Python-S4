@@ -1,6 +1,6 @@
 # Création d'un Mastermind
 
-###### Le but du Mastermind est de gagner les manches du jeu. Le gamer doit trouver le code secret pour réussir un maximum de tours. Le jeu consiste à savoir, combien il y a de pions bien placés et combien de pions sont mal placés.
+###### Le principe du jeu est simple, il faut placer les pions de couleurs au bon endroit pour trouver la combinaison secrète.
 
 
 | Objectifs        | 
