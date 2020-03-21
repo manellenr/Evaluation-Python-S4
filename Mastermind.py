@@ -79,11 +79,6 @@ print(result_secret())
 
 result_secret()  
  
-longueur = '2'
-nb_test = '4'
-couleurs = ['bleu','rose', 'or','argent'] # liste des choix de couleurs possibles
-
-col = random.choice(couleurs)
 
 def evaluation_code(code_secret, code_entree):
     bien_place, mal_place = 0, 0
