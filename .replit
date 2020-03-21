@@ -1,2 +1,2 @@
 language = "python3"
-run = "python mastermind.py"
+run = "python fenetre.py"

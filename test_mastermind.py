@@ -5,24 +5,7 @@ from random import shuffle
 #import doctest
 ################################################ #Doctests ################################################
 
-# doctest testmod
-class level:
-    """
-    Classe niveau. 
-    """
-      
-    def __init__(self, niveau):
-        self.hearder = dict(levelniveau = niveau)
-    
-    def call(self, methode, parametres):
-        r = urllib2.r(self.url + methode[0] + '/' + methode[1], urllib.urlencode(parametres), self.hearder)
-       
-        try:
-            i = json.loads(urllib2.urlopen(r).read())
-            return i
-        except urllib2.HTTPError as error:
-            return dict(Error=str(error))
-    
+# doctest testmod   
     
 class marstermind():
     """
