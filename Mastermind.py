@@ -100,17 +100,17 @@ def evaluation_code(code_secret, code_entree):
     return [bien_place, mal_place]
     
 print(evaluation_code('br','br')) # [2, 2]
+evaluation_code()
 
-def  mettre_pions():
-    e = input(" mettez vos pions : ")
-    if len(e) != len(longueur):
+def mettre_piont(e, col, longeur):
+     if len(e) != len(longueur):
         print(" vous n'avez mal choisi la longueur des pions ")
         return False
-    for u in e :
-        if u not in col : 
-            return False
-    else:
-        return e
+        for u in e :
+            if u not in col : 
+                return False
+            else:
+                return e
     
 mettre_pions()
 
