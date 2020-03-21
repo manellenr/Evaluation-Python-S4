@@ -1,6 +1,5 @@
-# Evaluation-Python-S4 : Création d'un Mastermind
+# Création d'un Mastermind
 
-# Projet Mastermind <h1> 
 ## Author: Nouar Manelle <h2> 
 
 Le but du Mastermind est de gagner les manches du jeu. Le gamer doit trouver le code secret pour réussir un maximum de tours.
