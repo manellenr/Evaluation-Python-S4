@@ -43,9 +43,9 @@ class marstermind():
     
 def main():
     print ("Bienvenue")
-if __name__ == '__main__':
-    doctest.testmod()
-    main()
+    if __name__ == '__main__':
+        doctest.testmod()
+main()
         
 # doctest hashed values
 couleurs = ['bleu','rose', 'or','argent']
