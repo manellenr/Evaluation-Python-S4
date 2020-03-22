@@ -93,7 +93,7 @@ def evaluation_code(code_secret, code_entree):
             couleurs_secret[gamer] = '*'
     return [bien_place, mal_place]
     
-print(evaluation_code('br','br')) # [2, 2]
+print(evaluation_code()) 
 evaluation_code()
 
 def mettre_pions(e, col, longeur):
