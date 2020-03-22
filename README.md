@@ -32,6 +32,7 @@ pyproject.toml
 - [PyMOTW-3 : Unittest](https://pymotw.com/3/unittest/index.html)
 - [Python](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
 - [The Mental Game of Python](https://www.youtube.com/watch?v=Uwuv05aZ6ug)
+- [Stop Writing Classes](https://www.youtube.com/watch?v=o9pEzgHorH0)
 
 
  
