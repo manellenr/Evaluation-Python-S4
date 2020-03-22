@@ -6,7 +6,13 @@ from random import shuffle
 ################################################ #Doctests ################################################
 
 # doctest testmod   
-    
+
+class level:
+    def __init__(self):
+        print("init")
+    def __call__(self):
+        print("call")
+        
 class marstermind():
     """
     Classe du jeu
