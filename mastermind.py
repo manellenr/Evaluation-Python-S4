@@ -97,6 +97,7 @@ print(evaluation_code())
 evaluation_code()
 
 def mettre_pions(e, col, longeur):
+     e = input(" mettez vos pions : ")
      if len(e) != len(longueur):
         print(" vous n'avez mal choisi la longueur des pions ")
         return False
