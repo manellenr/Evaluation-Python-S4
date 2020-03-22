@@ -1,6 +1,6 @@
 # Création d'un Mastermind
 
-###### Le principe du jeu est simple, il faut placer les pions de couleurs au bon endroit pour trouver la combinaison secrète. ce programme se joue seul contre l'ordinateur. Les pions sont de 4 couleurs différentes. L'ordinateur élabore un code secrèt de 2 pions colorés. Le joueur a pour objectif de découvrir ce code. Pour cela il doit proposer des combinaisons de 2 pions couleurs.
+###### Le principe du jeu est simple, il faut placer les pions de couleurs au bon endroit pour trouver la combinaison secrète. Ce programme se joue seul contre l'ordinateur. Les pions sont de 4 couleurs différentes. L'ordinateur élabore un code secrèt de 2 pions colorés. Le joueur a pour objectif de découvrir ce code. Pour cela il doit proposer des combinaisons de 2 pions couleurs.
 
 
 | Objectifs        | 
