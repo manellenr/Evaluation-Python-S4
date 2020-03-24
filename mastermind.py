@@ -6,12 +6,6 @@ Created on Tue Mar 18 00:25 2020
 """
 import random
 
-
-def f(n):
-    debut = 10**(n-1)
-    fin = (10**n)-1
-    return randint(debut, fin)
-
 def etendue(x1, x2):
     x_etendue = relativedelta(x1, x2)
     print("Vous avez joué à ce jeu pour",abs(x_etendue.hours),"heures,",abs(x_etendue.minutes),"minutes et",abs(x_etendue.seconds),"seconds.")
