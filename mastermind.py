@@ -10,8 +10,9 @@ def etendue(x1, x2):
     x_etendue = relativedelta(x1, x2)
     print("Vous avez joué à ce jeu pour",abs(x_etendue.hours),"heures,",abs(x_etendue.minutes),"minutes et",abs(x_etendue.seconds),"seconds.")
     return 0
- 
-print(" Bienvenue ! ")
+
+name = input(" Quel est votre nom ? ")
+print(f"Bienvenue !, {name}!")
 print(" Découvrez le jeu du Mastermind ")
 
 while True:
