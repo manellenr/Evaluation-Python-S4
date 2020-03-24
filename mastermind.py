@@ -11,8 +11,8 @@ def etendue(x1, x2):
     print("Vous avez joué à ce jeu pour",abs(x_etendue.hours),"heures,",abs(x_etendue.minutes),"minutes et",abs(x_etendue.seconds),"seconds.")
     return 0
 
-name = input(" Quel est votre nom ? ")
-print(f"Bienvenue !, {name}!")
+nom = input(" Quel est votre nom ? ")
+print(f"Bienvenue !, {nom}!")
 print(" Découvrez le jeu du Mastermind ")
 
 while True:
