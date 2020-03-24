@@ -4,10 +4,19 @@
 Created on Tue Mar 18 00:25 2020
 @author: nouar manelle
 """
-################################################ Programme principal ################################################
-
 import random
 
+
+def f(n):
+    debut = 10**(n-1)
+    fin = (10**n)-1
+    return randint(debut, fin)
+
+def etendue(x1, x2):
+    x_etendue = relativedelta(x1, x2)
+    print("Vous avez joué à ce jeu pour",abs(x_etendue.hours),"heures,",abs(x_etendue.minutes),"minutes et",abs(x_etendue.seconds),"seconds.")
+    return 0
+ 
 print(" Bienvenue ! ")
 print(" Découvrez le jeu du Mastermind ")
 
@@ -20,8 +29,9 @@ while True:
     while True:
         level = input(" Choisissez le level : ")
         if level == 'facile' or level == 'normal' or level == 'difficile':
-            break
-        
+            break 
+################################################ Programme principal ################################################
+    
 longueur = '2'
 nb_test = '4'
 couleurs = ['bleu','rose', 'or','argent'] 
@@ -109,7 +119,7 @@ def mettre_pions(e, col, longeur):
     
 mettre_pions()
 
-################################################ Autre tests ################################################
+################################################ Autre programme ################################################
 
 code_secret = input(" entrer un code secret : ")
 pions = input(" entrer des pions : ")
