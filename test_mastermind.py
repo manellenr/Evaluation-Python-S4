@@ -1,8 +1,9 @@
 from Mastermind import doctest
 import doctest_private_tests_external
 from random import shuffle
+import unittest
 
-#import doctest
+
 ################################################ #Doctests ################################################
 
 # doctest testmod   
@@ -73,7 +74,6 @@ __test__ = {
 
 ################################################   Tests unitaires ################################################
     
-import unittest
 
 # unittest truth 
 class jeu(unittest.TestCase):
@@ -84,5 +84,7 @@ class jeu(unittest.TestCase):
     def testAssertFalse(self):
         self.assertFalse(False, ' vous avez perdu le jeu :(')
         
+if __name__ == '__main__':
+    unittest.main()
 
 
