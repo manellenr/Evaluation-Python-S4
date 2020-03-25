@@ -82,4 +82,14 @@ class jeu(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+class testerlejeu(unittest.TestCase):
+    def testersortie(self):
+        probleme = ['b','r']
+
+        solution = ['o', 'b']
+
+        self.assertEqual(mastermind.check(probleme, solution), (0, 2))
+
+if __name__ == '__main__':
+    unittest.main()
 
