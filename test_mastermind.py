@@ -84,14 +84,19 @@ if __name__ == '__main__':
 
 class testerlejeu(unittest.TestCase):
     
-    def generersolution(self):
+    def sortieverificateur(self):
+        pb = ['bleu','rose', 'or','argent'] 
+        solution = pb
+        self.assertEqual(mastermind.check(pb, solution), (4, 0))
+    
+     def generersolution(self):
         solution = mastermind.generateProblem()
         self.assertEqual(len(solution), 2)
         
     def testersortie(self):
-        probleme = ['b','r']
+        pb = ['b','r']
         solution = ['o', 'b']
-        self.assertEqual(mastermind.check(probleme, solution), (0, 2))
+        self.assertEqual(mastermind.check(pb, solution), (0, 2))
 
 if __name__ == '__main__':
     unittest.main()
