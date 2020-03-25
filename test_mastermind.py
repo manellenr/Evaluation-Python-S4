@@ -1,4 +1,4 @@
-from Mastermind import doctest
+from mastermind import doctest
 import doctest_private_tests_external
 from random import shuffle
 import unittest
