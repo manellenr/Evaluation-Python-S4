@@ -77,27 +77,32 @@ class jeu(unittest.TestCase):
         self.assertTrue(True, ' Vous avez gagné le jeu :) ')
 
     def testAssertFalse(self):
-        self.assertFalse(False, ' vous avez perdu le jeu :(')
+        self.assertFalse(False, ' vous avez perdu le jeu :( ')
         
 if __name__ == '__main__':
     unittest.main()
 
 class testerlejeu(unittest.TestCase):
     
-    def sortieverificateur(self):
-        pb = ['bleu','rose', 'or','argent'] 
-        solution = pb
-        self.assertEqual(mastermind.check(pb, solution), (4, 0))
-    
-     def generersolution(self):
-        solution = mastermind.generateProblem()
-        self.assertEqual(len(solution), 2)
+    def installer(self):
+        mastermind.tries = list()
+        
+    def generersolu(self):
+        solu = mastermind.generateProblem()
+        self.assertEqual(len(solu), 2)
         
     def testersortie(self):
         pb = ['b','r']
-        solution = ['o', 'b']
-        self.assertEqual(mastermind.check(pb, solution), (0, 2))
+        solu = ['o', 'b']
+        self.assertEqual(mastermind.check(pb, solu), (0, 2))
+        
+    def sortieverifier(self):
+        pb = ['bleu','rose', 'or','argent'] 
+        solu = pb
+        self.assertEqual(mastermind.check(pb, solu), (4, 0))
+    
 
 if __name__ == '__main__':
     unittest.main()
+
 
