@@ -24,6 +24,13 @@
 poetry.lock
 pyproject.toml
 ```
+## Tests 
+
+###### Les tests unitaires sont effectués à l'aide du [module unittest](https://docs.python.org/3/library/unittest.html). Vous pouvez les exécuter sur un module de base (cd <module>) en faisant un
+ 
+```python -m unittest tests/*.py
+```
+
 ## Liens 
 
 - [Sam & Max : Unittest](http://sametmax.com/un-gros-guide-bien-gras-sur-les-tests-unitaires-en-python-partie-4/)
