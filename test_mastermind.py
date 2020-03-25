@@ -3,9 +3,6 @@ import doctest_private_tests_external
 from random import shuffle
 import unittest
 
-
-################################################ #Doctests ################################################
-
 # doctest testmod   
 
 class level:
@@ -71,9 +68,7 @@ __test__ = {
 
     'external': doctest_private_tests_external,
 }
-
-################################################   Tests unitaires ################################################
-    
+  
 
 # unittest truth 
 class jeu(unittest.TestCase):
