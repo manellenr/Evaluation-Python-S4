@@ -26,7 +26,7 @@ pyproject.toml
 ```
 ## Tests 
 
-###### Les tests unitaires sont effectués à l'aide du [module unittest](https://docs.python.org/3/library/unittest.html). Vous pouvez les exécuter sur un module de base (cd <module>) en faisant un
+###### Les tests unitaires sont effectués à l'aide du [module unittest](https://docs.python.org/3/library/unittest.html). Vous pouvez les exécuter sur un module de base ```(cd <module>)``` en faisant un :
  
 ```
 python -m unittest tests/*.py
